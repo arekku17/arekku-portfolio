@@ -27,8 +27,8 @@ const Sidebar = () => {
                 </div>
             </div>
             <nav className={`nav ${toggle ? "nav--open" : ""}`}>
-                <nav className="nav__item">
-                    <FontAwesomeIcon icon={faHome} className="nav__item-icon" />
+                <nav className="nav__item active">
+                    <FontAwesomeIcon icon={faHome} className="nav__item-icon-active" />
                     <span className="nav__item-text">Home</span>
                 </nav>
                 <nav className="nav__item">

@@ -205,6 +205,12 @@ $size: 60px;
     }
 }
 
+.active{
+    background-color: $bg-color;
+}
+
+
+
 .nav--open .nav__item:first-child {
     top: $size;
     transition-duration: 0.5s;
