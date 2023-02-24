@@ -191,7 +191,7 @@ $size: 60px;
 
 .nav__item {
     top: 0;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     transition-property: all;
     transition-timing-function: ease-in-out;
