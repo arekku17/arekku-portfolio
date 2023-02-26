@@ -16,12 +16,12 @@ const HomeInfo = () => {
             <div className="titleHome">
               <p>Hello World!</p>
               <div className="socialMedias">
-                <FontAwesomeIcon icon={faGithub} />
-                <FontAwesomeIcon icon={faLinkedinIn} />
+                <a href="https://github.com/arekku17"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://www.linkedin.com/in/arekku17/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
               </div>
             </div>
             <div className="nameHome">
-              <p>I´m Alex Perez Arenas</p>
+              <p className='name'>I´m Alex Perez Arenas</p>
               <p className="profesion">Frontend Developer | ONE and ISIC Student</p>
             </div>
           </div>

@@ -1,0 +1,93 @@
+.gridContainer {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem 1.5rem;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .accordion{
+        width: 100%;
+
+        .btnSkill{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            background-color: $btn-color;
+            color: white;
+            height: 4rem;
+            padding: 1rem 1.2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+
+            svg{
+                font-size: 2rem;
+            }
+            
+            .arrow{
+                display: none;
+                
+                &__active{
+                    display: flex;
+                }
+            }
+
+            cursor: pointer;
+
+            &:hover{
+                background-color: $btn-color-hover;
+            }
+        }
+
+
+        .skillsList{
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .skillContainer{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .skillInfo{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.3rem;
+    
+                    .skillName{
+                        font-weight: 600;
+                    }
+                }
+    
+                .progress {
+                    height: 15px;
+                    width: 100%;
+                    border: 1px solid #FF6768;
+                    border-radius: 10px;
+                    background-color: #FFBEBF;
+                    margin-bottom: 15px;
+        
+                    .progressBar {
+                        height: 100%;
+                        background: #FF6768;
+                        display: flex;
+                        align-items: center;
+                        transition: width 0.25s;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
+}

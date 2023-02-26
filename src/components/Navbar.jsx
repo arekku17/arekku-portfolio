@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from './Sidebar';
 
 const Navbar = () => {
+    const [fix, setFix] = useState(false);
 
-    
+    const setFixed = () => {
+
+        if(window.scrollY >= 530) {
+            setFix(true);
+        }else{
+            setFix(false);
+        }
+    }
+
+    window.addEventListener('scroll',  setFixed)
 
     return (
-        <header>
+        <header className={fix ? "header-active" : ""}>
             <img src="./logo arekku white.png" alt="logo" className='logo' />
             <nav>
-                
                 <ul className="navbarHorizontal">
                     <li><a href="#home" className="selected">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -18,9 +27,9 @@ const Navbar = () => {
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contactme">Contactme</a></li>
                 </ul>
-
-                <Sidebar></Sidebar>
             </nav>
+            
+            <Sidebar></Sidebar>
         </header>
     )
 }

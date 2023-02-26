@@ -9,13 +9,43 @@ html{
         background-color: $bg-color;
         font-family: 'Poppins';
         color: white;
+
+        main{
+            width: 80%;
+
+            margin: auto;
+            margin-bottom: 30px;
+            margin-top: 260px;
+
+            
+            @media (max-width: 850px) {
+                width: 90%;
+                margin-top: 200px;
+            }
+        }
+
+        .sectionTitle{
+            margin: 5rem 0;
+            text-align: center;
+            
+            .title{
+                font-size: 3rem;
+                font-weight: 600;
+            }
+
+            .description{
+                font-size: 1.5rem;
+            }
+        }
+
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1200px) {
         font-size: 12px;
     }
 
     @media (max-width: 450px) {
-        font-size: 8px;
+        font-size: 10px;
     }
+    
 }

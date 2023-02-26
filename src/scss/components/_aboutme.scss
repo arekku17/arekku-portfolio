@@ -1,0 +1,96 @@
+.containerLeft{
+    &__50{
+
+        @media (max-width: 600px) {
+            align-items: center;
+        }
+
+        p{
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+}
+
+.containerRight{
+    &__50{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        gap: 2.5rem;
+
+        @media (max-width: 800px) {
+            gap: 1.5rem;
+        }
+
+        
+        p{
+            @media (max-width: 800px) {
+                font-size: 1rem;
+            }
+
+            @media (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+
+
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .cardAbout{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .cantidad{
+                color: $secondary-color;
+                font-size: 5rem;
+
+                @media (max-width: 800px) {
+                    font-size: 4rem;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 6rem;
+                }
+            }
+        }
+    }
+}
+
+
+.downloadcv{
+    background-color: $btn-color;
+    width: fit-content;
+    padding: 20px 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-top: 3rem;
+    border: none;
+    
+    cursor: pointer;
+
+
+    @media (max-width: 600px) {
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    &:hover{
+        background-color: $btn-color-hover;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+    
+    svg{
+        font-size: 2.5rem;
+    }
+}
