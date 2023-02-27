@@ -10,3 +10,15 @@
     stroke-linejoin: round;
     stroke-miterlimit: 10;
 }
+
+.allScreen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg{
+        width: 70%;
+    }
+}
