@@ -19,7 +19,7 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar">
-            <div className="hamburger-menu__container" onClick={changeToggle}>
+            <div className="hamburger-menu__container" onClick={changeToggle} onKeyDown={changeToggle} role='presentation'>
                 <div className={`hamburger-menu ${toggle ? "hamburger-menu--open" : ""}`}>
                     <div className="hamburger-menu__line"></div>
                     <div className="hamburger-menu__line"></div>

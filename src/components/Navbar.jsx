@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <header className={fix ? "header-active" : ""}>
-            <img src="./logo arekku white.png" alt="logo" className='logo' />
+            <img src="./logo arekku dev.svg" alt="logo" className='logo' />
             <nav>
                 <ul className="navbarHorizontal">
                     <li><a href="#home" className="selected">Home</a></li>
