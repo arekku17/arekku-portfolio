@@ -2,39 +2,66 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     font-size: 1.3rem;
+    background-color: #1a1a1d;
 
-    img {
-        width: 100%;
-    }
-
-    .titleCard{
-        font-size: 2rem;
-    }
-
-    .techs{
+    .infoCard{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-        font-size: 1rem;
-        margin-bottom: 1rem;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    
+        .titleCard{
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+    
+        .techs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            padding: 0 0.5rem;
+            .tech{
+                background-color: $secondary-color;
+                padding: 0.2rem 0.6rem;
+                font-weight: 600;
+                border-radius: 1rem;
+            }
+        }
+    
+        .desCard{
+            text-align: center;
+            padding: 0 0.5rem;
+        }
     }
+
 
     .btns{
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        margin-top: 1rem;
         
         button{
             background-color: $btn-color;
-            width: 60%;
+            width: 48%;
+            padding: 0.5rem 0;
             display: flex;
-            justify-content: flex;
-            align-items: flex;
-
+            justify-content: center;
+            align-items: center;
+            border: 0;
             gap: 0.5rem;
 
+            cursor: pointer;
             color: white;
             font-weight: bold;
 
@@ -42,6 +69,10 @@
 
             svg{
                 font-size: 2rem;
+            }
+
+            &:hover{
+                background-color: $btn-color-hover;
             }
         }
     }

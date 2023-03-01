@@ -1,0 +1,45 @@
+.contacts{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
+    @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .contactContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        @media (max-width: 600px) {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        svg{
+            font-size: 4rem;
+            @media (max-width: 600px) {
+                font-size: 6rem;
+            }
+        }
+
+        .infoContact{
+            .social{
+                font-size: 3rem;
+                font-weight: 600;
+                @media (max-width: 600px) {
+                    text-align: center;
+                }
+            }
+            .userSocial{
+                font-size: 2rem;
+                font-weight: 200;
+                @media (max-width: 600px) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
