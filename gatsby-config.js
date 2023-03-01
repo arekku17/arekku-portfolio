@@ -28,4 +28,9 @@ module.exports = {
       },
     },
   ],
+  siteMetadata: {
+    title: `Arekku Portfolio`,
+    description: `Portfolio of Arekku`,
+    image: `/arekku-logo.png`
+  },
 }

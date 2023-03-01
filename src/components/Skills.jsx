@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { skillsData } from '../content/skillsData'
 import Accordion from './Accordion'
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { boxVariant } from '../content/variants';
+
 export const Skills = () => {
 
-  return (
-    <>
-      {console.log(skillsData)}
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
-      <div className="sectionTitle">
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
+
+  return (
+    <motion.div id='skills'
+    ref={ref}
+    variants={boxVariant}
+    initial="hidden"
+    animate={control}>
+      <div className="sectionTitle" >
         <p className="title">
           Skills
         </p>
@@ -25,6 +40,6 @@ export const Skills = () => {
           )
         }
       </div>
-    </>
+    </motion.div>
   )
 }

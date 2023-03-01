@@ -10,6 +10,8 @@ import Intro from "../components/Intro"
 import { useEffect } from "react"
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 import Contactme from "../components/Contactme"
+import { Helmet } from 'react-helmet';
+
 
 export default function Home() {
 
@@ -24,6 +26,9 @@ export default function Home() {
   },[])
 
   return <div ref={parent} style={{position: "absolute"}}>
+    <Helmet>
+        <title>Arekku Portfolio</title>
+    </Helmet>
     {intro ? 
     <Intro></Intro>
     :

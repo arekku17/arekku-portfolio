@@ -8,6 +8,7 @@ import {
     faFolder,
     faEnvelope
 } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-scroll';
 
 const Sidebar = () => {
 
@@ -27,30 +28,30 @@ const Sidebar = () => {
                 </div>
             </div>
             <nav className={`nav ${toggle ? "nav--open" : ""}`}>
-                <nav className="nav__item active">
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-300} className="nav__item">
                     <FontAwesomeIcon icon={faHome} className="nav__item-icon-active" />
                     <span className="nav__item-text">Home</span>
-                </nav>
-                <nav className="nav__item">
+                </Link>
+                <Link activeClass="active" to="about" spy={true} smooth={true} offset={-150} className="nav__item">
                     <FontAwesomeIcon icon={faUser} className="nav__item-icon" />
                     <span className="nav__item-text">About</span>
-                </nav>
-                <nav className="nav__item">
+                </Link>
+                <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-150} className="nav__item">
                     <FontAwesomeIcon icon={faCode} className="nav__item-icon" />
                     <span className="nav__item-text">Skills</span>
-                </nav>
-                <nav className="nav__item">
+                </Link>
+                <Link activeClass="active" to="qualification" spy={true} smooth={true} offset={-150} className="nav__item">
                     <FontAwesomeIcon icon={faGraduationCap} className="nav__item-icon" />
                     <span className="nav__item-text">Qualification</span>
-                </nav>
-                <nav className="nav__item">
+                </Link>
+                <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={-150} className="nav__item">
                     <FontAwesomeIcon icon={faFolder} className="nav__item-icon" />
                     <span className="nav__item-text">Portfolio</span>
-                </nav>
-                <nav className="nav__item">
+                </Link>
+                <Link activeClass="active" to="contactme" spy={true} smooth={true} offset={-150} className="nav__item">
                     <FontAwesomeIcon icon={faEnvelope} className="nav__item-icon" />
                     <span className="nav__item-text">Contactme</span>
-                </nav>
+                </Link>
             </nav>
         </div>
     )

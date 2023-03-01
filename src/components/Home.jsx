@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
-
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { boxVariant } from '../content/variants';
 
 const HomeInfo = () => {
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
+
+
   return (
     <>
-      <div className="containerColumn">
+      <motion.div className="containerColumn" id='home'
+        ref={ref}
+        variants={boxVariant}
+        initial="hidden"
+        animate={control}>
         <div className="containerLeft">
           <img src="./fotomia.svg" alt="Foto alex" />
         </div>
@@ -16,8 +33,8 @@ const HomeInfo = () => {
             <div className="titleHome">
               <p>Hello World!</p>
               <div className="socialMedias">
-                <a href="https://github.com/arekku17"><FontAwesomeIcon icon={faGithub} /></a>
-                <a href="https://www.linkedin.com/in/arekku17/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                <a href="https://github.com/arekku17" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://www.linkedin.com/in/arekku17/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
               </div>
             </div>
             <div className="nameHome">
@@ -29,7 +46,7 @@ const HomeInfo = () => {
             Passionate to design and development web pages, desktop and mobile apps. Always learning things news about programming and undertaking business of products.
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

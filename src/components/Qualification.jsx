@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { boxVariant } from '../content/variants';
+
 
 const Qualification = () => {
+
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        }
+    }, [control, inView]);
+
     return (
-        <>
+        <motion.div id='qualification'
+            ref={ref}
+            variants={boxVariant}
+            initial="hidden"
+            animate={control}>
             <div className="sectionTitle">
                 <p className="title">
                     Qualification
@@ -53,7 +72,7 @@ const Qualification = () => {
 
                 </div>
             </div>
-        </>
+        </motion.div>
     )
 }
 

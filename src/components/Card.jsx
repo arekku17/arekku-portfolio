@@ -28,8 +28,8 @@ const Card = (props) => {
                     </p>
                 </div>
                 <div className="btns">
-                    <button className='btnCard'> <p>Demo</p><FontAwesomeIcon icon={faEye} /> </button>
-                    <button className='btnCard'> <p>Repo</p>  <FontAwesomeIcon icon={faGithub} /></button>
+                    <a className='btnCard' href={item.demo} target="_blank" rel="noreferrer"> <p>Demo</p><FontAwesomeIcon icon={faEye} /> </a>
+                    <a className='btnCard' href={item.repo} target="_blank" rel="noreferrer"> <p>Repo</p>  <FontAwesomeIcon icon={faGithub} /></a>
                 </div>
             </div>
         </>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll';
 import Sidebar from './Sidebar';
 
 const Navbar = () => {
@@ -20,12 +21,12 @@ const Navbar = () => {
             <img src="./logo arekku dev.svg" alt="logo" className='logo' />
             <nav>
                 <ul className="navbarHorizontal">
-                    <li><a href="#home" className="selected">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#qualification">Qualification</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contactme">Contactme</a></li>
+                    <li><Link activeClass="selected" to="home" spy={true} smooth={true} offset={-300}>Home</Link></li>
+                    <li><Link activeClass="selected" to="about" spy={true} smooth={true} offset={-150}>About</Link></li>
+                    <li><Link activeClass="selected" to="skills" spy={true} smooth={true} offset={-150}>Skills</Link></li>
+                    <li><Link activeClass="selected" to="qualification" spy={true} smooth={true} offset={-150}>Qualification</Link></li>
+                    <li><Link activeClass="selected" to="portfolio" spy={true} smooth={true} offset={-150}>Portfolio</Link></li>
+                    <li><Link activeClass="selected" to="contactme" spy={true} smooth={true} offset={-150}>Contactme</Link></li>
                 </ul>
             </nav>
             
