@@ -9,6 +9,7 @@ import { useState } from "react"
 import Intro from "../components/Intro"
 import { useEffect } from "react"
 import { useAutoAnimate } from '@formkit/auto-animate/react'
+import Contactme from "../components/Contactme"
 
 export default function Home() {
 
@@ -32,6 +33,7 @@ export default function Home() {
       <Skills></Skills>
       <Qualification></Qualification>
       <Portfolio></Portfolio>
+      <Contactme></Contactme>
     </Layout>
     }
     
