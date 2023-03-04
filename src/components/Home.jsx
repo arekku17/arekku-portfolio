@@ -5,6 +5,7 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { boxVariant } from '../content/variants';
+import { TypeAnimation } from 'react-type-animation';
 
 const HomeInfo = () => {
 
@@ -31,7 +32,12 @@ const HomeInfo = () => {
         <div className="containerRight">
           <div className="topInfo">
             <div className="titleHome">
-              <p>Hello World!</p>
+              <TypeAnimation
+                sequence={['Hello World!', 1000, '']}
+                speed={45}
+                wrapper="p"
+                repeat={Infinity}
+              />
               <div className="socialMedias">
                 <a href="https://github.com/arekku17" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href="https://www.linkedin.com/in/arekku17/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
