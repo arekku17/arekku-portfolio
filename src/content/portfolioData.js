@@ -1,5 +1,29 @@
 export const dataPortafolio = [
     {
+        "name": "Cine Atlantis",
+        "img": "./projects/cineatlantis.JPG",
+        "tags": ["MONGODB", "EXPRESS", "NODEJS", "API", "NEXTJS", "JWT", "AXIOS", "HTML", "SCSS", "JS" , "STRIPE", "RECAPTCHA" , "AWS S3"],
+        "description": "E-commerce using MERN stack to buy cinema tickets for Cine Atlantis",
+        "demo": "https://www.cineatlantis.com.mx",
+        "repo": "https://github.com/arekku17"
+    },
+    {
+        "name": "TikTec Landing",
+        "img": "./projects/TikTec Landing.JPG",
+        "tags": ["REACT", "HTML", "SCSS", "JS"],
+        "description": "Landing Page for promote an academic event",
+        "demo": "https://www.tiktec.fun",
+        "repo": "https://github.com/arekku17/tictek"
+    },
+    {
+        "name": "Arekku Tienda",
+        "img": "./projects/arekkutienda.jpg",
+        "tags": ["MONGODB", "EXPRESS", "REACT", "NODEJS", "API", "JWT", "AXIOS", "HTML", "CSS", "JS"],
+        "description": "E-commerce using MERN stack",
+        "demo": "https://arekkutienda.netlify.app/",
+        "repo": "https://github.com/arekku17/arekku-tienda"
+    },
+    {
         "name": "Pinterest Clone",
         "img": "./projects/pinterest.jpg",
         "tags": ["HTML", "CSS"],
@@ -8,27 +32,11 @@ export const dataPortafolio = [
         "repo": "https://github.com/arekku17/clon-pinterest"
     },
     {
-        "name": "Arekku Tienda",
-        "img": "./projects/arekkutienda.jpg",
-        "tags": ["MONGODB", "EXPRESS", "REACT", "NODEJS", "API", "JWT", "AXIOS", "HTML", "CSS", "JS"],
-        "description": "E-commerce using MERN stack",
-        "demo": "https://arekku-tienda.onrender.com/",
-        "repo": "https://github.com/arekku17/arekku-tienda"
-    },
-    {
-        "name": "E-commerce",
-        "img": "./projects/e-commerce.jpg",
-        "tags": ["REACT", "AXIOS", "WEBPACK", "HTML", "CSS", "JS"],
-        "description": "E-commerce consuming an API of Dev.F",
-        "demo": "https://apptiendadevf.netlify.app/home",
-        "repo": ""
-    },
-    {
         "name": "Pokedex",
         "img": "./projects/Pokedex.jpg",
         "tags": ["NODEJS", "AXIOS", "EXPRESS","HTML", "CSS", "JS"],
         "description": "Web app consuming the POKE API",
-        "demo": "https://pokedex-2pfl.onrender.com/",
+        "demo": "https://pokedexjs.onrender.com/",
         "repo": "https://github.com/arekku17/PokedexNodeJS"
     },
     {

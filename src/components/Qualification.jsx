@@ -66,7 +66,7 @@ const Qualification = () => {
                         <img src="./schools/ONE_logo_rgb-768x408.png" alt="one" />
                     </div>
                     <div className="infoSchool">
-                        <p className="date">DECEMBER 2022 - PRESENT</p>
+                        <p className="date">DECEMBER 2022 - JUNE 2023</p>
                         <p className="career">Backend Developer</p>
                     </div>
 
