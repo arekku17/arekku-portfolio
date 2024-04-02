@@ -8,17 +8,41 @@ export const dataPortafolio = [
         "repo": "https://github.com/arekku17"
     },
     {
-        "name": "TikTec Landing",
-        "img": "./projects/TikTec Landing.JPG",
-        "tags": ["REACT", "HTML", "SCSS", "JS"],
-        "description": "Landing Page for promote an academic event",
-        "demo": "https://www.tiktec.fun",
-        "repo": "https://github.com/arekku17/tictek"
+        "name": "Cine Atlantis ADMIN",
+        "img": "./projects/admin.png",
+        "tags": [ "HTML", "PRIMEFLEX", "JS", "NEXTJS", "PRIMEREACT", "MONGODB", "EXPRESS", "NODEJS", "API", "JWT", "AXIOS", "RECAPTCHA" , "AWS S3"],
+        "description": "Panel Admin to manage the Atlantis cinema system",
+        "demo": "https://www.cineatlantis.com.mx",
+        "repo": "https://github.com/arekku17"
+    },
+    {
+        "name": "Boletika",
+        "img": "./projects/boletika.png",
+        "tags": ["MONGODB", "EXPRESS", "NODEJS", "API", "NEXTJS", "JWT", "AXIOS", "HTML", "SCSS", "JS" , "REACT NATIVE"],
+        "description": "Ticket sales and management system for all types of events",
+        "demo": "https://boletika.com/",
+        "repo": "https://boletika.com/"
+    },
+    {
+        "name": "Herrería Hugo",
+        "img": "./projects/herreria hugo.png",
+        "tags": ["HTML", "CSS", "JS", "NETLIFY"],
+        "description": "Landing Page to promote a blacksmith workshop",
+        "demo": "https://herreriahugo.netlify.app/",
+        "repo": "https://herreriahugo.netlify.app/"
     },
     {
         "name": "Arekku Tienda",
-        "img": "./projects/arekkutienda.jpg",
+        "img": "./projects/arekkutienda.png",
         "tags": ["MONGODB", "EXPRESS", "REACT", "NODEJS", "API", "JWT", "AXIOS", "HTML", "CSS", "JS"],
+        "description": "E-commerce using MERN stack",
+        "demo": "https://arekkutienda.netlify.app/",
+        "repo": "https://github.com/arekku17/arekku-tienda"
+    },
+    {
+        "name": "Arekku Tienda Admin",
+        "img": "./projects/arekkutienda admin.png",
+        "tags": ["HTML", "CSS", "TYPESCRIPT", "PRIMEFLEX", "PRIMEREACT", "NEXTJS 13", "MONGODB", "EXPRESS", "REACT", "NODEJS", "API", "JWT", "AXIOS"],
         "description": "E-commerce using MERN stack",
         "demo": "https://arekkutienda.netlify.app/",
         "repo": "https://github.com/arekku17/arekku-tienda"

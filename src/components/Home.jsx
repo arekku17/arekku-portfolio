@@ -6,6 +6,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { boxVariant } from '../content/variants';
 import { TypeAnimation } from 'react-type-animation';
+import { StaticImage } from "gatsby-plugin-image"
 
 const HomeInfo = () => {
 
@@ -27,7 +28,7 @@ const HomeInfo = () => {
         initial="hidden"
         animate={control}>
         <div className="containerLeft">
-          <img src="./fotomia.svg" alt="Foto alex" />
+          <StaticImage src="../../static/fotomia.svg" alt="Foto Personal" />
         </div>
         <div className="containerRight">
           <div className="topInfo">

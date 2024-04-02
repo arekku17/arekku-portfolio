@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTelegram, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { faTelegram, faDiscord, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { boxVariant } from '../content/variants';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Contactme = () => {
 
@@ -40,13 +41,20 @@ const Contactme = () => {
                         <p className="userSocial">@arekku17</p>
                     </div>
                 </div>
-                <div className="contactContainer">
-                    <FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon>
+                <a href='tel:+52982184028' className="contactContainer">
+                    <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
                     <div className="infoContact">
-                        <p className="social">Discord</p>
-                        <p className="userSocial">Arekku17#2494</p>
+                        <p className="social">Phone</p>
+                        <p className="userSocial">+52 982 184 5028</p>
                     </div>
-                </div>
+                </a>
+                <a href='https://wa.me/529821845028' className="contactContainer">
+                    <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
+                    <div className="infoContact">
+                        <p className="social">Whatsapp</p>
+                        <p className="userSocial">+52 982 184 5028</p>
+                    </div>
+                </a>
             </div>
         </motion.div>
     )
