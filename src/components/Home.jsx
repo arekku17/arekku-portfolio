@@ -28,7 +28,7 @@ const HomeInfo = () => {
         initial="hidden"
         animate={control}>
         <div className="containerLeft">
-          <StaticImage src="../../static/fotomia.svg" alt="Foto Personal" />
+          <StaticImage src="../../static/fotomia.png" alt="Foto Personal" placeholder="none"/>
         </div>
         <div className="containerRight">
           <div className="topInfo">
